@@ -1,0 +1,59 @@
+### Starting TaskPrologue of job 761961 on a1624 at Thu Jun 15 14:42:43 CEST 2023
+Running on cores 48-63 with governor ondemand
+Thu Jun 15 14:42:43 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:61:00.0 Off |                    0 |
+|  0%   32C    P8               21W / 300W|      0MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+2023-06-15 14:43:02.778569: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-15 14:43:16.946504: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Some weights of the model checkpoint at output_filtered_BERTx450_5e-7_10 were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertModel were not initialized from the model checkpoint at output_filtered_BERTx450_5e-7_10 and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/BERT_RFP_1/BERT_features.py", line 27, in <module>
+    with open(input_file,"r") as fasta:
+FileNotFoundError: [Errno 2] No such file or directory: 'RFPs3nms.fasta'
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun 15 14:44:27 CEST 2023
+= Job-ID             : 761961 on alex
+= Job-Name           : BERT_features.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/BERT_RFP_1/BERT_features.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/BERT_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:01:45
+= Total RAM usage    : 1.5 GiB of assigned 58 GiB (2.6%)   
+= Node list          : a1624
+= Subm/Elig/Start/End: 2023-06-15T14:42:42 / 2023-06-15T14:42:42 / 2023-06-15T14:42:42 / 2023-06-15T14:44:27
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.9G    52.4G   104.9G        N/A     102K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:61:00.0, 142378, 1 %, 0 %, 1974 MiB, 7301 ms

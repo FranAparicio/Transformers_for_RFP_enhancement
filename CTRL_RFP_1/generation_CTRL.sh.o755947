@@ -1,0 +1,52 @@
+### Starting TaskPrologue of job 755947 on a0124 at Thu Jun  8 16:45:08 CEST 2023
+Running on cores 64-79 with governor ondemand
+Thu Jun  8 16:45:08 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:81:00.0 Off |                  Off |
+|  0%   46C    P0               61W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Reading pretrained model and tokenizer
+  0%|          | 0/1 [00:00<?, ?it/s]2023-06-08 16:45:28.071253: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-08 16:45:29.581501: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+100%|██████████| 1/1 [4:40:28<00:00, 16828.89s/it]100%|██████████| 1/1 [4:40:28<00:00, 16828.89s/it]
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun  8 21:25:58 CEST 2023
+= Job-ID             : 755947 on alex
+= Job-Name           : generation_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/generation_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 04:40:51
+= Total RAM usage    : 3.0 GiB of assigned 58 GiB (5.2%)   
+= Node list          : a0124
+= Subm/Elig/Start/End: 2023-06-08T16:45:07 / 2023-06-08T16:45:07 / 2023-06-08T16:45:07 / 2023-06-08T21:25:58
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:81:00.0, 856749, 76 %, 64 %, 48494 MiB, 16838595 ms

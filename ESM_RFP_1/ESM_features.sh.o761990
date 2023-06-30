@@ -1,0 +1,50 @@
+### Starting TaskPrologue of job 761990 on a0226 at Thu Jun 15 15:28:30 CEST 2023
+Running on cores 32-47 with governor ondemand
+Thu Jun 15 15:28:30 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:41:00.0 Off |                  Off |
+|  0%   31C    P8               21W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/ESM_RFP_1/extract.py", line 12, in <module>
+    from esm import Alphabet, FastaBatchedDataset, ProteinBertModel, pretrained, MSATransformer
+ModuleNotFoundError: No module named 'esm'
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun 15 15:28:35 CEST 2023
+= Job-ID             : 761990 on alex
+= Job-Name           : ESM_features.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/ESM_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:00:05
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0226
+= Subm/Elig/Start/End: 2023-06-15T15:28:29 / 2023-06-15T15:28:29 / 2023-06-15T15:28:29 / 2023-06-15T15:28:34
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           31.4G    52.4G   104.9G        N/A     102K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

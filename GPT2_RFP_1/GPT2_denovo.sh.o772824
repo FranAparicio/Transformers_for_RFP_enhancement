@@ -1,0 +1,48 @@
+### Starting TaskPrologue of job 772824 on a0324 at Wed Jun 28 17:22:29 CEST 2023
+Running on cores 48-63 with governor ondemand
+Wed Jun 28 17:22:29 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     On  | 00000000:61:00.0 Off |                  Off |
+|  0%   32C    P8              22W / 300W |      4MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+2023-06-28 17:22:35.901208: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+slurmstepd: error: *** JOB 772824 ON a0324 CANCELLED AT 2023-06-28T17:22:43 ***
+=== JOB_STATISTICS ===
+=== current date     : Wed Jun 28 17:22:45 CEST 2023
+= Job-ID             : 772824 on alex
+= Job-Name           : GPT2_denovo.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/GPT2_RFP_1/GPT2_denovo.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/GPT2_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:00:15
+= Total RAM usage    : 2.3 GiB of assigned 58 GiB (4.0%)   
+= Node list          : a0324
+= Subm/Elig/Start/End: 2023-06-28T17:22:25 / 2023-06-28T17:22:25 / 2023-06-28T17:22:28 / 2023-06-28T17:22:43
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc           66.5G    52.4G   104.9G  19542days     105K     500K   1,000K        N/A !!!
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

@@ -1,0 +1,83 @@
+### Starting TaskPrologue of job 755263 on a0121 at Wed Jun  7 12:59:42 CEST 2023
+Running on cores 112-127 with governor ondemand
+Wed Jun  7 12:59:42 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:E1:00.0 Off |                  Off |
+|  0%   32C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+2023-06-07 12:59:49.401892: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-07 12:59:50.963737: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-07 12:59:54.243265: I external/xla/xla/service/service.cc:168] XLA service 0x557f65910300 initialized for platform Interpreter (this does not guarantee that XLA will be used). Devices:
+2023-06-07 12:59:54.243302: I external/xla/xla/service/service.cc:176]   StreamExecutor device (0): Interpreter, <undefined>
+2023-06-07 12:59:54.249445: I external/xla/xla/pjrt/tfrt_cpu_pjrt_client.cc:218] TfrtCpuClient created.
+2023-06-07 12:59:54.249969: I external/xla/xla/stream_executor/tpu/tpu_initializer_helper.cc:269] Libtpu path is: libtpu.so
+2023-06-07 12:59:54.250435: I external/xla/xla/stream_executor/tpu/tpu_initializer_helper.cc:277] Failed to open libtpu: libtpu.so: cannot open shared object file: No such file or directory
+2023-06-07 12:59:54.250486: I external/xla/xla/stream_executor/tpu/tpu_platform_interface.cc:73] No TPU platform found.
+No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+06/07/2023 12:59:54 - WARNING - __main__ - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/transformers/optimization.py:391: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/32 [00:00<?, ?it/s]Skipping the first batches:   0%|          | 0/32 [00:00<?, ?it/s]
+  0%|          | 0/930 [00:00<?, ?it/s][A                                                                  
+                                       [ASkipping the first batches:   0%|          | 0/32 [00:00<?, ?it/s]
+  0%|          | 0/930 [00:00<?, ?it/s][A  0%|          | 0/930 [00:00<?, ?it/s]
+Skipping the first batches:   0%|          | 0/32 [00:00<?, ?it/s]
+{'train_runtime': 0.0263, 'train_samples_per_second': 142689.286, 'train_steps_per_second': 35386.943, 'train_loss': 0.0, 'epoch': 32.13}
+***** train metrics *****
+  epoch                    =      32.13
+  train_loss               =        0.0
+  train_runtime            = 0:00:00.02
+  train_samples            =        125
+  train_samples_per_second = 142689.286
+  train_steps_per_second   =  35386.943
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00,  3.83it/s]100%|██████████| 2/2 [00:00<00:00,  3.74it/s]
+***** eval metrics *****
+  epoch                   =      32.13
+  eval_loss               =     1.0012
+  eval_runtime            = 0:00:02.01
+  eval_samples            =         10
+  eval_samples_per_second =      4.974
+  eval_steps_per_second   =      1.492
+  perplexity              =     2.7217
+2023-06-07 13:00:21.629258: I external/xla/xla/pjrt/tfrt_cpu_pjrt_client.cc:221] TfrtCpuClient destroyed.
+=== JOB_STATISTICS ===
+=== current date     : Wed Jun  7 13:00:22 CEST 2023
+= Job-ID             : 755263 on alex
+= Job-Name           : finetuning_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/finetuning_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:41
+= Total RAM usage    : 3.2 GiB of assigned 58 GiB (5.5%)   
+= Node list          : a0121
+= Subm/Elig/Start/End: 2023-06-07T12:59:41 / 2023-06-07T12:59:41 / 2023-06-07T12:59:41 / 2023-06-07T13:00:22
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:E1:00.0, 1885618, 6 %, 2 %, 18362 MiB, 28402 ms

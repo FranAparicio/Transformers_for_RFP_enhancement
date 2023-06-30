@@ -1,0 +1,124 @@
+### Starting TaskPrologue of job 755942 on a0124 at Thu Jun  8 16:39:09 CEST 2023
+Running on cores 64-79 with governor ondemand
+Thu Jun  8 16:39:10 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:81:00.0 Off |                  Off |
+|  0%   30C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Reading pretrained model and tokenizer
+  0%|          | 0/1 [00:00<?, ?it/s]2023-06-08 16:39:31.855507: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-08 16:39:33.677122: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+100%|██████████| 1/1 [00:13<00:00, 13.35s/it]100%|██████████| 1/1 [00:13<00:00, 13.35s/it]
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M S K G E E L F T G V V P I L V E L D G D V N G H K F S V R G E G E G D A T N G K L T L K F I C T T G K L P V P W P T L V T T F T Y G V Q C F S R Y P D H M K R H D F F K S A M P E G Y V Q E R T I S F K D D G T Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N F N S G N V Y I T A D K Q K N G I K A N F K I R H N V E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S V L S K D P N E K R D H M V L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M S K G E E L F T G V V P I L V E L D G D V N G H K F S V R G E G E G D A T N G K L T L K F I C T T G K L P V P W P T L V T T F T Y G V Q C F S R Y P D H M K R H D F F K S A M P E G Y V Q E R T I S F K D D G T Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N F N S G N V Y I T A D K Q K N G I K A N F K I R H N V E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S V L S K D P N E K R D H M V L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M S K G E E L F T G V V P I L V E L D G D V N G H K F S V R G E G E G D A T N G K L T L K F I C T T G K L P V P W P T L V T T F T Y G V Q C F S R Y P D H M K R H D F F K S A M P E G Y V Q E R T I S F K D D G T Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N F N S G N V Y I T A D K Q K N G I K A N F K I R H N V E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S V L S K D P N E K R D H M V L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTFTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSGNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M S K G E E L F T G V V P I L V E L D G D V N G H K F S V R G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T L T Y G V Q C F S R Y P D H M K R H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N F N S H K V Y I T A D K Q K N G I K A N F K I R H N V E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S C Q T I L S K D P N E K R D H M V L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M S K G E E L F T G V V P I L V E L D G D V N G H K F S V R G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T L T Y G V Q C F S R Y P D H M K R H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N F N S H K V Y I T A D K Q K N G I K A N F K I R H N V E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S C Q T I L S K D P N E K R D H M V L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M S K G E E L F T G V V P I L V E L D G D V N G H K F S V R G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T L T Y G V Q C F S R Y P D H M K R H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N F N S H K V Y I T A D K Q K N G I K A N F K I R H N V E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S C Q T I L S K D P N E K R D H M V L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHKVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSCQTILSKDPNEKRDHMVLLEFVTAAGITHGMDELYK
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T F A W G V Q C F S R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N A I S H N V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S A L S K D P N E K R D H M V L L E F V T A A G I <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T F A W G V Q C F S R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N A I S H N V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S A L S K D P N E K R D H M V L L E F V T A A G I <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T F A W G V Q C F S R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N A I S H N V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S A L S K D P N E K R D H M V L L E F V T A A G I <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MASKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTFAWGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTISFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNAISHNVYITADKQKNGIKANFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGI
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M V S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T A K L K V T K G G P L P F S W D I L S P Q F M Y G S R A F T K H P P D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P E D G V L K G D I K M A L R L R H G G R Y L A D F K T T Y K A K K P V Q M P G A Y N V D R K L D I T S H N E D Y T V V E Q Y E R S E A R H S T G G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M V S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T A K L K V T K G G P L P F S W D I L S P Q F M Y G S R A F T K H P P D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P E D G V L K G D I K M A L R L R H G G R Y L A D F K T T Y K A K K P V Q M P G A Y N V D R K L D I T S H N E D Y T V V E Q Y E R S E A R H S T G G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M V S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T A K L K V T K G G P L P F S W D I L S P Q F M Y G S R A F T K H P P D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P E D G V L K G D I K M A L R L R H G G R Y L A D F K T T Y K A K K P V Q M P G A Y N V D R K L D I T S H N E D Y T V V E Q Y E R S E A R H S T G G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MVSKGEAVIKEFMRFKVHMEGSMNGHEFEIEGEGEGRPYEGTQTAKLKVTKGGPLPFSWDILSPQFMYGSRAFTKHPPDIPDYFKQSFPEGFKWERVMNFEDGGAVTVTQDTSLEDGTLIYKVKLRGTNFPPDGPVMQKKTMGWEASTERLYPEDGVLKGDIKMALRLRHGGRYLADFKTTYKAKKPVQMPGAYNVDRKLDITSHNEDYTVVEQYERSEARHSTGGMDELYK
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M V S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T L K L K V T E G G P L P F S W D I L S P Q F M Y G S R A F T K H P A D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P E D G V L K G D I K L K Q D G H L K L H Y L V D F K T T Y M A K K P G G G H Y Y Y N V D R K K V E Y T V V Q L P D N E Q Y E R T E R H S Q F V A G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M V S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T L K L K V T E G G P L P F S W D I L S P Q F M Y G S R A F T K H P A D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P E D G V L K G D I K L K Q D G H L K L H Y L V D F K T T Y M A K K P G G G H Y Y Y N V D R K K V E Y T V V Q L P D N E Q Y E R T E R H S Q F V A G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M V S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T L K L K V T E G G P L P F S W D I L S P Q F M Y G S R A F T K H P A D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P E D G V L K G D I K L K Q D G H L K L H Y L V D F K T T Y M A K K P G G G H Y Y Y N V D R K K V E Y T V V Q L P D N E Q Y E R T E R H S Q F V A G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MVSKGEAVIKEFMRFKVHMEGSMNGHEFEIEGEGEGRPYEGTQTLKLKVTEGGPLPFSWDILSPQFMYGSRAFTKHPADIPDYFKQSFPEGFKWERVMNFEDGGAVTVTQDTSLEDGTLIYKVKLRGTNFPPDGPVMQKKTMGWEASTERLYPEDGVLKGDIKLKQDGHLKLHYLVDFKTTYMAKKPGGGHYYYNVDRKKVEYTVVQLPDNEQYERTERHSQFVAGMDELYK
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M R G S H H H H H H G A L S K G G P D D P G V T L V S R G E L V P M S G E L K I F S G Y G K R I K P W P H D L Q L V H D F Q D G S S G S T I V R Y Q R Y L K D H L V S A M K R Y F K S D F E L V K D G T A <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M R G S H H H H H H G A L S K G G P D D P G V T L V S R G E L V P M S G E L K I F S G Y G K R I K P W P H D L Q L V H D F Q D G S S G S T I V R Y Q R Y L K D H L V S A M K R Y F K S D F E L V K D G T A <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M R G S H H H H H H G A L S K G G P D D P G V T L V S R G E L V P M S G E L K I F S G Y G K R I K P W P H D L Q L V H D F Q D G S S G S T I V R Y Q R Y L K D H L V S A M K R Y F K S D F E L V K D G T A <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MRGSHHHHHHGALSKGGPDDPGVTLVSRGELVPMSGELKIFSGYGKRIKPWPHDLQLVHDFQDGSSGSTIVRYQRYLKDHLVSAMKRYFKSDFELVKDGTA
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M H H H H H H S A L G K G E N M T G K P F V I A F K Y E D D G E G N V K E F N V E G E G R P Y E G E V Q S L K L P W D I L T A T A Y G K L T A Y G N R A Y P D I P D F K Q S F P D Y F P E G Y T W Q F E R I F E D G G G A I Q D I F Y H V K V E S L R N G T L R F P D P V M Q K T L D W E P N E K M Y V R D G V L K L C D G V K T I E F K F H G G G V L I H Y R Y K A K K L P S F V E I G K L M P G Y H Y H R T D I E I E I E D K D Y N K V K L Y E H N K V A R A V E G L G G L <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M H H H H H H S A L G K G E N M T G K P F V I A F K Y E D D G E G N V K E F N V E G E G R P Y E G E V Q S L K L P W D I L T A T A Y G K L T A Y G N R A Y P D I P D F K Q S F P D Y F P E G Y T W Q F E R I F E D G G G A I Q D I F Y H V K V E S L R N G T L R F P D P V M Q K T L D W E P N E K M Y V R D G V L K L C D G V K T I E F K F H G G G V L I H Y R Y K A K K L P S F V E I G K L M P G Y H Y H R T D I E I E I E D K D Y N K V K L Y E H N K V A R A V E G L G G L <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M H H H H H H S A L G K G E N M T G K P F V I A F K Y E D D G E G N V K E F N V E G E G R P Y E G E V Q S L K L P W D I L T A T A Y G K L T A Y G N R A Y P D I P D F K Q S F P D Y F P E G Y T W Q F E R I F E D G G G A I Q D I F Y H V K V E S L R N G T L R F P D P V M Q K T L D W E P N E K M Y V R D G V L K L C D G V K T I E F K F H G G G V L I H Y R Y K A K K L P S F V E I G K L M P G Y H Y H R T D I E I E I E D K D Y N K V K L Y E H N K V A R A V E G L G G L <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MHHHHHHSALGKGENMTGKPFVIAFKYEDDGEGNVKEFNVEGEGRPYEGEVQSLKLPWDILTATAYGKLTAYGNRAYPDIPDFKQSFPDYFPEGYTWQFERIFEDGGGAIQDIFYHVKVESLRNGTLRFPDPVMQKTLDWEPNEKMYVRDGVLKLCDGVKTIEFKFHGGGVLIHYRYKAKKLPSFVEIGKLMPGYHYHRTDIEIEIEDKDYNKVKLYEHNKVARAVEGLGGL
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M G S P A T S K I L Q L V D M K Y M T M S H F N G C I T Y E G N D G N P F G E V Q T Q E G G G N L C G P F A F D I Q A F X A D I L H Y G S K V F T Q G P D Y V K Q Y P E F P E W L S F T F T Y E R T M S Y E D G G A A Q R A I M E V I S G M K V H V H A K F P P P N D M K K L T F P N W E K G M T E K M Y S S E K L C E G A Y E E N I I L K G G G G G F C Y R N F M A K K P V H L Q L K T F Y H Y Y V D V T K E H R I P N H V E I G F I S I A Q T E H N <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M G S P A T S K I L Q L V D M K Y M T M S H F N G C I T Y E G N D G N P F G E V Q T Q E G G G N L C G P F A F D I Q A F X A D I L H Y G S K V F T Q G P D Y V K Q Y P E F P E W L S F T F T Y E R T M S Y E D G G A A Q R A I M E V I S G M K V H V H A K F P P P N D M K K L T F P N W E K G M T E K M Y S S E K L C E G A Y E E N I I L K G G G G G F C Y R N F M A K K P V H L Q L K T F Y H Y Y V D V T K E H R I P N H V E I G F I S I A Q T E H N <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M G S P A T S K I L Q L V D M K Y M T M S H F N G C I T Y E G N D G N P F G E V Q T Q E G G G N L C G P F A F D I Q A F X A D I L H Y G S K V F T Q G P D Y V K Q Y P E F P E W L S F T F T Y E R T M S Y E D G G A A Q R A I M E V I S G M K V H V H A K F P P P N D M K K L T F P N W E K G M T E K M Y S S E K L C E G A Y E E N I I L K G G G G G F C Y R N F M A K K P V H L Q L K T F Y H Y Y V D V T K E H R I P N H V E I G F I S I A Q T E H N <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MGSPATSKILQLVDMKYMTMSHFNGCITYEGNDGNPFGEVQTQEGGGNLCGPFAFDIQAFXADILHYGSKVFTQGPDYVKQYPEFPEWLSFTFTYERTMSYEDGGAAQRAIMEVISGMKVHVHAKFPPPNDMKKLTFPNWEKGMTEKMYSSEKLCEGAYEENIILKGGGGGFCYRNFMAKKPVHLQLKTFYHYYVDVTKEHRIPNHVEIGFISIAQTEHN
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M A S S H H H H Q G S A L V P A L F T Y F K D T R G N K F N N N E Y E Y E N C T G S I K V G D G K M G P Y E V V F S E G D L X G K I K P L P F S W S I P A L M R C F I Q G S L M K Y P E G I P D R Y E 24. 3 E R V A T F E N D D G I I T Y Y E N K V E G T L R F Q N G S M R F P V M D G P C E P T M T K K T M Y P S G T E I I M Y V D C E I G G G N A L S Q F A T T Y R A K K L L V E S Y K S V R Y H F V G F D V M P K Q H K V E I V A S I A S G L Q L A V A R Y E D G H H S S I L R E M <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M A S S H H H H Q G S A L V P A L F T Y F K D T R G N K F N N N E Y E Y E N C T G S I K V G D G K M G P Y E V V F S E G D L X G K I K P L P F S W S I P A L M R C F I Q G S L M K Y P E G I P D R Y E 24. 3 E R V A T F E N D D G I I T Y Y E N K V E G T L R F Q N G S M R F P V M D G P C E P T M T K K T M Y P S G T E I I M Y V D C E I G G G N A L S Q F A T T Y R A K K L L V E S Y K S V R Y H F V G F D V M P K Q H K V E I V A S I A S G L Q L A V A R Y E D G H H S S I L R E M <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+ <start> M A S S H H H H Q G S A L V P A L F T Y F K D T R G N K F N N N E Y E Y E N C T G S I K V G D G K M G P Y E V V F S E G D L X G K I K P L P F S W S I P A L M R C F I Q G S L M K Y P E G I P D R Y E 24. 3 E R V A T F E N D D G I I T Y Y E N K V E G T L R F Q N G S M R F P V M D G P C E P T M T K K T M Y P S G T E I I M Y V D C E I G G G N A L S Q F A T T Y R A K K L L V E S Y K S V R Y H F V G F D V M P K Q H K V E I V A S I A S G L Q L A V A R Y E D G H H S S I L R E M <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_seq_post:
+MASSHHHHQGSALVPALFTYFKDTRGNKFNNNEYEYENCTGSIKVGDGKMGPYEVVFSEGDLXGKIKPLPFSWSIPALMRCFIQGSLMKYPEGIPDRYE24.3ERVATFENDDGIITYYENKVEGTLRFQNGSMRFPVMDGPCEPTMTKKTMYPSGTEIIMYVDCEIGGGNALSQFATTYRAKKLLVESYKSVRYHFVGFDVMPKQHKVEIVASIASGLQLAVARYEDGHHSSILREM
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun  8 16:39:39 CEST 2023
+= Job-ID             : 755942 on alex
+= Job-Name           : generation_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/generation_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:30
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0124
+= Subm/Elig/Start/End: 2023-06-08T16:39:08 / 2023-06-08T16:39:08 / 2023-06-08T16:39:09 / 2023-06-08T16:39:39
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:81:00.0, 855378, 19 %, 12 %, 6722 MiB, 16082 ms

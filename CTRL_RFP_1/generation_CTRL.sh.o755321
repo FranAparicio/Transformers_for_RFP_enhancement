@@ -1,0 +1,246 @@
+### Starting TaskPrologue of job 755321 on a0121 at Wed Jun  7 14:31:07 CEST 2023
+Running on cores 112-127 with governor ondemand
+Wed Jun  7 14:31:07 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:E1:00.0 Off |                  Off |
+|  0%   31C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_1’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_2’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_3’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_4’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_5’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_6’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_7’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_8’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_9’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_10’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_11’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_12’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_13’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_14’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_15’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_16’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_17’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_18’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_19’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_20’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_21’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_22’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_23’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_24’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_25’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_26’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_27’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_28’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_29’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_30’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_31’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_32’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_33’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_34’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_35’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_36’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_37’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_38’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_39’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_40’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_41’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_42’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_43’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_44’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_45’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_46’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_47’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_48’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_49’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_50’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_51’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_52’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_53’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_54’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_55’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_56’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_57’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_58’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_59’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_60’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_61’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_62’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_63’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_64’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_65’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_66’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_67’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_68’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_69’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_70’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_71’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_72’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_73’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_74’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_75’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_76’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_77’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_78’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_79’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_80’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_81’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_82’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_83’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_84’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_85’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_86’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_87’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_88’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_89’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_90’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_91’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_92’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_93’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_94’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_95’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_96’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_97’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_98’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_99’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+mkdir: cannot create directory ‘./CTRL_denovo_final_set/denovo_100’: No such file or directory
+python: can't open file '/home/atuin/b114cb/b114cb13/CTRL_RFP_1/CTRL_denovo_final_set/generation_CTRL.py': [Errno 2] No such file or directory
+=== JOB_STATISTICS ===
+=== current date     : Wed Jun  7 14:31:12 CEST 2023
+= Job-ID             : 755321 on alex
+= Job-Name           : generation_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/generation_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:05
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0121
+= Subm/Elig/Start/End: 2023-06-07T14:31:06 / 2023-06-07T14:31:06 / 2023-06-07T14:31:06 / 2023-06-07T14:31:11
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

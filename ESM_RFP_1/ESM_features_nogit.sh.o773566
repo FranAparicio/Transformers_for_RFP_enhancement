@@ -1,0 +1,48 @@
+### Starting TaskPrologue of job 773566 on a0425 at Thu Jun 29 14:50:51 CEST 2023
+Running on cores 96-111 with governor ondemand
+Thu Jun 29 14:50:51 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     On  | 00000000:C1:00.0 Off |                    0 |
+|  0%   32C    P8              22W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/var/tmp/slurmd_spool/job773566/slurm_script: line 14: 1333032 Killed                  python ESM_features_batch.py
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=773566.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun 29 14:53:23 CEST 2023
+= Job-ID             : 773566 on alex
+= Job-Name           : ESM_features_nogit.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features_nogit.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/ESM_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:02:33
+= Total RAM usage    : 45.8 GiB of assigned 58 GiB (79.0%)   
+= Node list          : a0425
+= Subm/Elig/Start/End: 2023-06-29T14:50:50 / 2023-06-29T14:50:50 / 2023-06-29T14:50:50 / 2023-06-29T14:53:23
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc           66.5G    52.4G   104.9G  19542days     105K     500K   1,000K        N/A !!!
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

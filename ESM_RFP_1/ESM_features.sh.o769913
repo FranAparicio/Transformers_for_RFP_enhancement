@@ -1,0 +1,54 @@
+### Starting TaskPrologue of job 769913 on a0521 at Fri Jun 23 14:02:18 CEST 2023
+Running on cores 32-47 with governor ondemand
+Fri Jun 23 14:02:18 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:41:00.0 Off |                  Off |
+|  0%   32C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Requirement already satisfied: fair-esm in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (2.0.0)
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+Collecting git+https://github.com/facebookresearch/esm.git
+  Cloning https://github.com/facebookresearch/esm.git to /tmp/769913.alex/pip-req-build-cyjaqpyc
+  Running command git clone --filter=blob:none --quiet https://github.com/facebookresearch/esm.git /tmp/769913.alex/pip-req-build-cyjaqpyc
+slurmstepd: error: *** JOB 769913 ON a0521 CANCELLED AT 2023-06-23T14:03:39 ***
+=== JOB_STATISTICS ===
+=== current date     : Fri Jun 23 14:03:41 CEST 2023
+= Job-ID             : 769913 on alex
+= Job-Name           : ESM_features.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/ESM_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:01:22
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0521
+= Subm/Elig/Start/End: 2023-06-23T14:02:16 / 2023-06-23T14:02:16 / 2023-06-23T14:02:17 / 2023-06-23T14:03:39
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           31.4G    52.4G   104.9G        N/A     105K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

@@ -1,0 +1,92 @@
+### Starting TaskPrologue of job 755940 on a0124 at Thu Jun  8 16:36:20 CEST 2023
+Running on cores 16-31 with governor ondemand
+Thu Jun  8 16:36:20 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:25:00.0 Off |                  Off |
+|  0%   29C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Reading pretrained model and tokenizer
+  0%|          | 0/1 [00:00<?, ?it/s]2023-06-08 16:36:55.955954: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-08 16:37:04.025281: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+100%|██████████| 1/1 [00:29<00:00, 29.89s/it]100%|██████████| 1/1 [00:29<00:00, 29.89s/it]
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T I C T T T T T G K L P V P W P T L V T T L S R G V Q C F S R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N Y N S D N V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S Y Q S A L S K D P N E K R D H M V L L E F V T A A G I <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T I C T T T T T G K L P V P W P T L V T T L S R G V Q C F S R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I S F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G H K L E Y N Y N S D N V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S Y Q S A L S K D P N E K R D H M V L L E F V T A A G I <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+1. 24. 3. 1 
+printing_seq_post:
+1.24.3.1
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M V S E L I K E N M H M K L Y M E G T V N N H H F K C T S E G E G K P Y E G T Q T M R I K A V E G G P L P F A F D I L A T S F M Y G S R T F I K H P P G I P D F F K Q S F P E G F T W E R V T T Y E D G G V L T A T Q D T S L Q D G C L I Y N V K I R G V N F P S N G P V M Q K K K W E P S T E A N T M Y P R D G G L E G A D M A L K H M A L K V G G G G H L H L H C S F K K P A T N L K M P G V Y N V D H R L E R I K E A D K E T Y V E Q H E V A V A R Y S T K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M V S E L I K E N M H M K L Y M E G T V N N H H F K C T S E G E G K P Y E G T Q T M R I K A V E G G P L P F A F D I L A T S F M Y G S R T F I K H P P G I P D F F K Q S F P E G F T W E R V T T Y E D G G V L T A T Q D T S L Q D G C L I Y N V K I R G V N F P S N G P V M Q K K K W E P S T E A N T M Y P R D G G L E G A D M A L K H M A L K V G G G G H L H L H C S F K K P A T N L K M P G V Y N V D H R L E R I K E A D K E T Y V E Q H E V A V A R Y S T K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+1. 24. 3. 1 
+printing_seq_post:
+1.24.3.1
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M G S E L F T V V P I F M R I E G V N G H M K F K C V R G E G K G E G R P Y E G H N T V T Q D I N T A K V H P L M P Q F M Y G S K I K T F I N H T Q S G I P D F K Q S F P E G F T W E R V T T Y E D G G C L T A H Q D T S L D T Y N Q D G V K V Y N V N F P S N G P V M Q K K T L E P A G L Y S T E T E V L Y P R D G V L Q C D S Q G H H S L K V L I V E N V L F S A R L K G G H Y L K S I T Y R K P G F V D D T I T S H D K E T Y V E Q F V A R I E V A R <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M G S E L F T V V P I F M R I E G V N G H M K F K C V R G E G K G E G R P Y E G H N T V T Q D I N T A K V H P L M P Q F M Y G S K I K T F I N H T Q S G I P D F K Q S F P E G F T W E R V T T Y E D G G C L T A H Q D T S L D T Y N Q D G V K V Y N V N F P S N G P V M Q K K T L E P A G L Y S T E T E V L Y P R D G V L Q C D S Q G H H S L K V L I V E N V L F S A R L K G G H Y L K S I T Y R K P G F V D D T I T S H D K E T Y V E Q F V A R I E V A R <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+1. 24. 3. 1 
+printing_seq_post:
+1.24.3.1
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M G S S H S L F T G N E L I K I V P M K F K T G T Y E G D G S V R Y E G D K L Q H M T G N G K A P L C T S Y D L F T G T C C V P Q A F I L G N R A F T F T F T C G N R Y P E D G F K S G T A E R A T Y K Q E N D G I L E T S N G D C L K V Y N V Y N V E L R I R G G P S N G P V M A V E K I L K N T C H P I L G G G K N T Q N G S N T C P I L M V C C S A L R Y F A K D H V G S R S G P K M P G G F Y F V D R L K E R E A S Q H E T C E K A A V P S M S L K L K C D A G S K P S <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M G S S H S L F T G N E L I K I V P M K F K T G T Y E G D G S V R Y E G D K L Q H M T G N G K A P L C T S Y D L F T G T C C V P Q A F I L G N R A F T F T F T C G N R Y P E D G F K S G T A E R A T Y K Q E N D G I L E T S N G D C L K V Y N V Y N V E L R I R G G P S N G P V M A V E K I L K N T C H P I L G G G K N T Q N G S N T C P I L M V C C S A L R Y F A K D H V G S R S G P K M P G G F Y F V D R L K E R E A S Q H E T C E K A A V P S M S L K L K C D A G S K P S <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad>']
+printing_seq_pre:
+1. 24. 3. 1 
+printing_seq_post:
+1.24.3.1
+printing_sequence:
+1. 24. 3. 1 <sep> <start> M G H D S L V S K P T M R I K E G T V N G H A F K C I E G D G K P Y E G H Q S M D L I K V E G T N L K A P F D I L T T A F H Y G N R V F V F K G P S W K Q S W P Q G M P F P A F P E R S M D G F A Q G I C I A Q A F D K H F S S L H F R F H N D S F T F Y E G I H F D T M N F P P P N K T M T H G W D G W N T L L T A D S E K M L R D G F Y N K V R D I T T V R D S A L K V K L Q F P G G M P E F Y H R L V D H F V T Q R I T S N M F V K V A R T P N L Q R D H T S Q H R I T S V T A S D <end> <|endoftext|> <pad>
+printing_column:
+['1. 24. 3. 1 ', ' <start> M G H D S L V S K P T M R I K E G T V N G H A F K C I E G D G K P Y E G H Q S M D L I K V E G T N L K A P F D I L T T A F H Y G N R V F V F K G P S W K Q S W P Q G M P F P A F P E R S M D G F A Q G I C I A Q A F D K H F S S L H F R F H N D S F T F Y E G I H F D T M N F P P P N K T M T H G W D G W N T L L T A D S E K M L R D G F Y N K V R D I T T V R D S A L K V K L Q F P G G M P E F Y H R L V D H F V T Q R I T S N M F V K V A R T P N L Q R D H T S Q H R I T S V T A S D <end> <|endoftext|> <pad>']
+printing_seq_pre:
+1. 24. 3. 1 
+printing_seq_post:
+1.24.3.1
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun  8 16:37:18 CEST 2023
+= Job-ID             : 755940 on alex
+= Job-Name           : generation_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/generation_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:58
+= Total RAM usage    : 1.6 GiB of assigned 58 GiB (2.8%)   
+= Node list          : a0124
+= Subm/Elig/Start/End: 2023-06-08T16:36:19 / 2023-06-08T16:36:19 / 2023-06-08T16:36:20 / 2023-06-08T16:37:18
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:25:00.0, 854737, 9 %, 5 %, 6722 MiB, 32552 ms

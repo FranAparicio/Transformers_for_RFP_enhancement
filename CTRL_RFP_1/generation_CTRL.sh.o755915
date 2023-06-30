@@ -1,0 +1,105 @@
+### Starting TaskPrologue of job 755915 on a0122 at Thu Jun  8 16:15:54 CEST 2023
+Running on cores 0-15 with governor ondemand
+Thu Jun  8 16:15:54 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:01:00.0 Off |                  Off |
+|  0%   30C    P8               21W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Reading pretrained model and tokenizer
+  0%|          | 0/1 [00:00<?, ?it/s]2023-06-08 16:16:18.189464: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-08 16:16:25.396951: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+100%|██████████| 1/1 [00:32<00:00, 32.05s/it]100%|██████████| 1/1 [00:32<00:00, 32.05s/it]
+Printing ppls:
+[('1. 24. 3. 1 <sep> <start> M A S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T A K L K V T K G G P L P F S W D I L S P Q F M Y G S R A F T K H P A D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P A D G V L R G D I K M A L R L K D G G R Y L V D F K T T Y K A K K P V Q M P G A Y N V D R K L D I T S H N E D Y T V V E Q Y E R S E A R H S T G G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>', 1.1175260137109257), ('1. 24. 3. 1 <sep> <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T L T W G V Q C F A R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I F F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G N F K E Y N Y I S D V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L V Y Q S I L S T Q S K D P N E K L Y Q Y V L N E K R D H M V L L L E F H G M D E L Y K <end> <|endoftext|> <pad> <pad>', 1.2574449807166752), ('1. 24. 3. 1 <sep> <start> M V S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W G Y G V T T L T W G V T L V Q C F S Y P D H K Q C F G V Q C F K R Y P E A M P E G Y P E R T F F K D D F K T I F E G D G D T L V K F K F K G D F K V N R I E D G I E L K E Y N Y N S D N V Y I T A D K Q K N G I K A N F K I R H N I E D G V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S A L S K D P N E K R D H M V L L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad>', 1.2774196652421421), ('1. 24. 3. 1 <sep> <start> M R M S H H H H H H T D P S V S K G E N G V I A L F Q M S V I K T M E G N N N H Y F K C T Q M K C I E G R F K V V I E G P Y M Q F A F D G S N H I N A F M X G I P Y Q S F P F P D I S F P A W D G F K Q S L K G I P A R Y E G L S L M E G Y E D V F E D G V N D I T S L Q Q K K V R F P H T K K G W E P S V M Q R D G V R D T E K M A H T V N D G V M L S Y L T T Y R S K G G V K K K L P G Y Y Y Y H F V D H C D I I V K L V D H N I V E I A H S D Y E I V A R R D S D N K L P N V L L <end> <|endoftext|> <pad> <pad> <pad> <pad>', 2.2149554623195264), ('1. 24. 3. 1 <sep> <start> M S V I K Q E N M H F V G S L I K E G T V N G N L A T C T K G K P Y E R M Q H A V V I E G H D G K I A P F A F S Y I K T Q S Y D I K T A F I N H V F P D I F K G S F P A W E G F T W E R V T T Y E D G G V L T A N H Q D T S L Q D G C I Y N F P H T R N G V T L G P V M Q K H P S T L K G L G L Y P N H T H M M S Q G T Y H M A L I E G G L Q R Y L H V D N F R T Y F V K D S I N L Q T R S K L V R I E H A H Y Y P D K E Q R L F V E I Q A V A H S D N K F Q <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>', 2.424156629271427), ('1. 24. 3. 1 <sep> <start> G E L F T N R D M H V Y K S V I K C T V N M E G H Q F K S V R D G S R M K A K C T S V N G H E G H Q T G K G P L P F A F D I L X S F M Y G S K T F I P D Y F K Q S F P A D G F K W E R V V F E R T R G G G V L S N A N K I E M V K F H N G D T M A N A K L R G V G S L T M Q N F P S V M Q D G W E M M Y P R M Y P R G G N A D G L L S H A L R V D G G G R C S Y A F E K K T Y H F V N I K M P G G F V D H F V D H R L T S K L S K D Y T V V K E R S H S K E L A V <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>', 2.8838852128009047), ('1. 24. 3. 1 <sep> <start> M S V I K Q A L H H T D P M V S F K G E L V I 1 <sep> <start> M E G S V D G N G H K F S G D G N V R G D G K Q T M G K L K P F S A F H Y G G G E D L P V H L C T T A Y G N H F F A K Y P D H I Q A F A F P D Y F K Y F P E G Y S W Q E R S L F E D Q D R S L F S F E D I S I G N C F Q K F Y G N F H V D G T M V T G F P V M Y P A S D K M Y H N A V C D G F V M T F K T T Y K S L K G G F V K L K G N I H F V K M P G F V T I K M P V D H F N H I S H F E H F V T S Q L T S D I M P N G L T R T A K <end> <|endoftext|> <pad> <pad> <pad>', 3.2897764728497996), ('1. 24. 3. 1 <sep> <start> M A S K P F M N G T I V G Q L P F Q R G T I N G F E F N G T G P Y M A T P F K H D G F E A L S K H A F P G F E G I K H T V H P E L P F Y G M Y P D G F A F N G A H T K Q S P E T K Y F T Y E L R Y E G G C D T A A T S L Q D G F Q V M V L F N C I L G V D G V N F P P V M L C P P V T N K T P E K T N D K A V D G W E I S T S T M M M Y P N D G R L M R Y R Y E T T F A E K E V K A L K S D H F V Y N G G G P A I L Q H F A I S K D Q R K V F V T G V M <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>', 3.55097525426711), ('1. 24. 3. 1 <sep> <start> M P A L T G P Q I K Y R D M N L F K T M S G T F T V I E G D G V D G H C N G H Q S Q S V I K F A P L P F S F X S G F V S I A L A Y G F V H D G S R Y P T M H I E T F E A Q E C H F P E G Y E T S H G G V H I A S H I S S R I Q D C F T S N C V S L G T F Q E G F P H M K I P H T S D T S D G L E P H M S D I V V S H G D S A V A M T I I L F T F T G F T I G F L K S Y K K M P H F V E E G F T I S Y K M P A K M T E G F T S K Q Q E L Q E L V A V A V H R Y A F Q S R Y E G G G <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>', 4.038197563406534)]
+['1. 24. 3. 1 ', ' <start> M A S K G E A V I K E F M R F K V H M E G S M N G H E F E I E G E G E G R P Y E G T Q T A K L K V T K G G P L P F S W D I L S P Q F M Y G S R A F T K H P A D I P D Y F K Q S F P E G F K W E R V M N F E D G G A V T V T Q D T S L E D G T L I Y K V K L R G T N F P P D G P V M Q K K T M G W E A S T E R L Y P A D G V L R G D I K M A L R L K D G G R Y L V D F K T T Y K A K K P V Q M P G A Y N V D R K L D I T S H N E D Y T V V E Q Y E R S E A R H S T G G M D E L Y K <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> M A S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W P T L V T T L T W G V Q C F A R Y P D H M K Q H D F F K S A M P E G Y V Q E R T I F F K D D G N Y K T R A E V K F E G D T L V N R I E L K G I D F K E D G N I L G N F K E Y N Y I S D V Y I T A D K Q K N G I K A N F K I R H N I E D G S V Q L A D H Y Q Q N T P I G D G P V L L V Y Q S I L S T Q S K D P N E K L Y Q Y V L N E K R D H M V L L L E F H G M D E L Y K <end> <|endoftext|> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> M V S K G E E L F T G V V P I L V E L D G D V N G H K F S V S G E G E G D A T Y G K L T L K F I C T T G K L P V P W G Y G V T T L T W G V T L V Q C F S Y P D H K Q C F G V Q C F K R Y P E A M P E G Y P E R T F F K D D F K T I F E G D G D T L V K F K F K G D F K V N R I E D G I E L K E Y N Y N S D N V Y I T A D K Q K N G I K A N F K I R H N I E D G V Q L A D H Y Q Q N T P I G D G P V L L P D N H Y L S T Q S A L S K D P N E K R D H M V L L L E F V T A A G I T H G M D E L Y K <end> <|endoftext|> <pad>']
+['1. 24. 3. 1 ', ' <start> M R M S H H H H H H T D P S V S K G E N G V I A L F Q M S V I K T M E G N N N H Y F K C T Q M K C I E G R F K V V I E G P Y M Q F A F D G S N H I N A F M X G I P Y Q S F P F P D I S F P A W D G F K Q S L K G I P A R Y E G L S L M E G Y E D V F E D G V N D I T S L Q Q K K V R F P H T K K G W E P S V M Q R D G V R D T E K M A H T V N D G V M L S Y L T T Y R S K G G V K K K L P G Y Y Y Y H F V D H C D I I V K L V D H N I V E I A H S D Y E I V A R R D S D N K L P N V L L <end> <|endoftext|> <pad> <pad> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> M S V I K Q E N M H F V G S L I K E G T V N G N L A T C T K G K P Y E R M Q H A V V I E G H D G K I A P F A F S Y I K T Q S Y D I K T A F I N H V F P D I F K G S F P A W E G F T W E R V T T Y E D G G V L T A N H Q D T S L Q D G C I Y N F P H T R N G V T L G P V M Q K H P S T L K G L G L Y P N H T H M M S Q G T Y H M A L I E G G L Q R Y L H V D N F R T Y F V K D S I N L Q T R S K L V R I E H A H Y Y P D K E Q R L F V E I Q A V A H S D N K F Q <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> G E L F T N R D M H V Y K S V I K C T V N M E G H Q F K S V R D G S R M K A K C T S V N G H E G H Q T G K G P L P F A F D I L X S F M Y G S K T F I P D Y F K Q S F P A D G F K W E R V V F E R T R G G G V L S N A N K I E M V K F H N G D T M A N A K L R G V G S L T M Q N F P S V M Q D G W E M M Y P R M Y P R G G N A D G L L S H A L R V D G G G R C S Y A F E K K T Y H F V N I K M P G G F V D H F V D H R L T S K L S K D Y T V V K E R S H S K E L A V <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> M S V I K Q A L H H T D P M V S F K G E L V I 1 ', ' <start> M E G S V D G N G H K F S G D G N V R G D G K Q T M G K L K P F S A F H Y G G G E D L P V H L C T T A Y G N H F F A K Y P D H I Q A F A F P D Y F K Y F P E G Y S W Q E R S L F E D Q D R S L F S F E D I S I G N C F Q K F Y G N F H V D G T M V T G F P V M Y P A S D K M Y H N A V C D G F V M T F K T T Y K S L K G G F V K L K G N I H F V K M P G F V T I K M P V D H F N H I S H F E H F V T S Q L T S D I M P N G L T R T A K <end> <|endoftext|> <pad> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> M A S K P F M N G T I V G Q L P F Q R G T I N G F E F N G T G P Y M A T P F K H D G F E A L S K H A F P G F E G I K H T V H P E L P F Y G M Y P D G F A F N G A H T K Q S P E T K Y F T Y E L R Y E G G C D T A A T S L Q D G F Q V M V L F N C I L G V D G V N F P P V M L C P P V T N K T P E K T N D K A V D G W E I S T S T M M M Y P N D G R L M R Y R Y E T T F A E K E V K A L K S D H F V Y N G G G P A I L Q H F A I S K D Q R K V F V T G V M <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+['1. 24. 3. 1 ', ' <start> M P A L T G P Q I K Y R D M N L F K T M S G T F T V I E G D G V D G H C N G H Q S Q S V I K F A P L P F S F X S G F V S I A L A Y G F V H D G S R Y P T M H I E T F E A Q E C H F P E G Y E T S H G G V H I A S H I S S R I Q D C F T S N C V S L G T F Q E G F P H M K I P H T S D T S D G L E P H M S D I V V S H G D S A V A M T I I L F T F T G F T I G F L K S Y K K M P H F V E E G F T I S Y K M P A K M T E G F T S K Q Q E L Q E L V A V A V H R Y A F Q S R Y E G G G <end> <|endoftext|> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>']
+Printing sequences:
+{'1.24.3.1': [('1.24.3.1', 1.1175260137109257), ('1.24.3.1', 1.2574449807166752), ('1.24.3.1', 1.2774196652421421), ('1.24.3.1', 2.2149554623195264), ('1.24.3.1', 2.424156629271427), ('1.24.3.1', 2.8838852128009047), ('1.24.3.1', 3.2897764728497996), ('1.24.3.1', 3.55097525426711), ('1.24.3.1', 4.038197563406534)]}
+Printing key:
+1.24.3.1
+Printing value:
+[('1.24.3.1', 1.1175260137109257), ('1.24.3.1', 1.2574449807166752), ('1.24.3.1', 1.2774196652421421), ('1.24.3.1', 2.2149554623195264), ('1.24.3.1', 2.424156629271427), ('1.24.3.1', 2.8838852128009047), ('1.24.3.1', 3.2897764728497996), ('1.24.3.1', 3.55097525426711), ('1.24.3.1', 4.038197563406534)]
+Printing index
+0
+Printing val
+('1.24.3.1', 1.1175260137109257)
+Printing index
+1
+Printing val
+('1.24.3.1', 1.2574449807166752)
+Printing index
+2
+Printing val
+('1.24.3.1', 1.2774196652421421)
+Printing index
+3
+Printing val
+('1.24.3.1', 2.2149554623195264)
+Printing index
+4
+Printing val
+('1.24.3.1', 2.424156629271427)
+Printing index
+5
+Printing val
+('1.24.3.1', 2.8838852128009047)
+Printing index
+6
+Printing val
+('1.24.3.1', 3.2897764728497996)
+Printing index
+7
+Printing val
+('1.24.3.1', 3.55097525426711)
+Printing index
+8
+Printing val
+('1.24.3.1', 4.038197563406534)
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun  8 16:16:42 CEST 2023
+= Job-ID             : 755915 on alex
+= Job-Name           : generation_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/generation_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:50
+= Total RAM usage    : 1.7 GiB of assigned 58 GiB (2.9%)   
+= Node list          : a0122
+= Subm/Elig/Start/End: 2023-06-08T16:15:52 / 2023-06-08T16:15:52 / 2023-06-08T16:15:52 / 2023-06-08T16:16:42
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:01:00.0, 5097, 9 %, 5 %, 6722 MiB, 34684 ms

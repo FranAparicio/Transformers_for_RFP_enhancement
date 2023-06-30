@@ -1,0 +1,95 @@
+### Starting TaskPrologue of job 760411 on a1622 at Wed Jun 14 13:47:55 CEST 2023
+Running on cores 96-111 with governor ondemand
+Wed Jun 14 13:47:55 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:C1:00.0 Off |                    0 |
+|  0%   30C    P8               21W / 300W|      0MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Traceback (most recent call last):
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 1253, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 1299, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 1248, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 1008, in _send_output
+    self.send(msg)
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 948, in send
+    self.connect()
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 1415, in connect
+    super().connect()
+  File "/apps/python/3.9-anaconda/lib/python3.9/http/client.py", line 919, in connect
+    self.sock = self._create_connection(
+  File "/apps/python/3.9-anaconda/lib/python3.9/socket.py", line 843, in create_connection
+    raise err
+  File "/apps/python/3.9-anaconda/lib/python3.9/socket.py", line 831, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features.py", line 4, in <module>
+    model, alphabet = torch.hub.load("facebookresearch/esm:main", "esm2_t33_650M_UR50D")
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/hub.py", line 555, in load
+    repo_or_dir = _get_cache_or_reload(repo_or_dir, force_reload, trust_repo, "load",
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/hub.py", line 222, in _get_cache_or_reload
+    _validate_not_a_forked_repo(repo_owner, repo_name, ref)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/hub.py", line 181, in _validate_not_a_forked_repo
+    response = json.loads(_read_url(Request(url, headers=headers)))
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/hub.py", line 164, in _read_url
+    with urlopen(url) as r:
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/apps/python/3.9-anaconda/lib/python3.9/urllib/request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 110] Connection timed out>
+=== JOB_STATISTICS ===
+=== current date     : Wed Jun 14 13:50:09 CEST 2023
+= Job-ID             : 760411 on alex
+= Job-Name           : ESM_features.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/ESM_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:02:15
+= Total RAM usage    : 0.2 GiB of assigned 58 GiB (0.3%)   
+= Node list          : a1622
+= Subm/Elig/Start/End: 2023-06-14T13:47:53 / 2023-06-14T13:47:53 / 2023-06-14T13:47:54 / 2023-06-14T13:50:09
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.9G    52.4G   104.9G        N/A     102K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

@@ -1,0 +1,67 @@
+### Starting TaskPrologue of job 755292 on a0121 at Wed Jun  7 13:42:40 CEST 2023
+Running on cores 112-127 with governor ondemand
+Wed Jun  7 13:42:40 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:E1:00.0 Off |                  Off |
+|  0%   31C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+2023-06-07 13:42:47.882833: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-06-07 13:42:49.455079: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-07 13:42:52.866274: I external/xla/xla/service/service.cc:168] XLA service 0x55cf0eff32a0 initialized for platform Interpreter (this does not guarantee that XLA will be used). Devices:
+2023-06-07 13:42:52.866317: I external/xla/xla/service/service.cc:176]   StreamExecutor device (0): Interpreter, <undefined>
+2023-06-07 13:42:52.872514: I external/xla/xla/pjrt/tfrt_cpu_pjrt_client.cc:218] TfrtCpuClient created.
+2023-06-07 13:42:52.873023: I external/xla/xla/stream_executor/tpu/tpu_initializer_helper.cc:269] Libtpu path is: libtpu.so
+2023-06-07 13:42:52.873563: I external/xla/xla/stream_executor/tpu/tpu_initializer_helper.cc:277] Failed to open libtpu: libtpu.so: cannot open shared object file: No such file or directory
+2023-06-07 13:42:52.873617: I external/xla/xla/stream_executor/tpu/tpu_platform_interface.cc:73] No TPU platform found.
+No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+06/07/2023 13:42:52 - WARNING - __main__ - Process rank: -1, device: cuda:0, n_gpu: 1distributed training: False, 16-bits training: False
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/CTRL_RFP_1/5.run_clm-post.py", line 383, in <module>
+    main()
+  File "/home/atuin/b114cb/b114cb13/CTRL_RFP_1/5.run_clm-post.py", line 272, in main
+    config = CONFIG_MAPPING[model_args.model_type]()
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/transformers/models/auto/configuration_auto.py", line 623, in __getitem__
+    raise KeyError(key)
+KeyError: None
+2023-06-07 13:42:53.284766: I external/xla/xla/pjrt/tfrt_cpu_pjrt_client.cc:221] TfrtCpuClient destroyed.
+/var/tmp/slurmd_spool/job755292/slurm_script: line 20: --evaluation_strategy=steps: command not found
+=== JOB_STATISTICS ===
+=== current date     : Wed Jun  7 13:42:54 CEST 2023
+= Job-ID             : 755292 on alex
+= Job-Name           : finetuning_CTRL.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/CTRL_RFP_1/finetuning_CTRL.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/CTRL_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:13
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0121
+= Subm/Elig/Start/End: 2023-06-07T13:42:39 / 2023-06-07T13:42:39 / 2023-06-07T13:42:40 / 2023-06-07T13:42:53
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

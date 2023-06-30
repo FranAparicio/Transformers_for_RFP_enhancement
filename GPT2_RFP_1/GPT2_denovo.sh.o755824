@@ -1,0 +1,59 @@
+### Starting TaskPrologue of job 755824 on a1622 at Thu Jun  8 12:31:05 CEST 2023
+Running on cores 0-15 with governor ondemand
+Thu Jun  8 12:31:05 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:01:00.0 Off |                    0 |
+|  0%   33C    P8               22W / 300W|      0MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+2023-06-08 12:31:13.649129: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Reading pretrained model and tokenizer
+  0%|          | 0/1 [00:00<?, ?it/s]/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/transformers/generation/utils.py:1201: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+  0%|          | 0/1 [02:54<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/GPT2_RFP_1/GPT2_denovo_zymlike.py", line 69, in <module>
+    sequences = main(label, model, special_tokens, device, tokenizer, protgpt2)
+  File "/home/atuin/b114cb/b114cb13/GPT2_RFP_1/GPT2_denovo_zymlike.py", line 40, in main
+    ppls = [(tokenizer.decode(output), calculatePerplexity(output, model, tokenizer)) for output in new_outputs ]
+NameError: name 'new_outputs' is not defined
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun  8 12:35:05 CEST 2023
+= Job-ID             : 755824 on alex
+= Job-Name           : GPT2_denovo.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/GPT2_RFP_1/GPT2_denovo.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/GPT2_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:04:01
+= Total RAM usage    : 9.7 GiB of assigned 58 GiB (16.7%)   
+= Node list          : a1622
+= Subm/Elig/Start/End: 2023-06-08T12:31:04 / 2023-06-08T12:31:04 / 2023-06-08T12:31:04 / 2023-06-08T12:35:05
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

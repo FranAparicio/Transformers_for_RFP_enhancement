@@ -1,0 +1,164 @@
+### Starting TaskPrologue of job 762064 on a0223 at Thu Jun 15 16:33:56 CEST 2023
+Running on cores 112-127 with governor ondemand
+Thu Jun 15 16:33:56 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:E1:00.0 Off |                  Off |
+|  0%   31C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Requirement already satisfied: fair-esm in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (2.0.0)
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+Collecting git+https://github.com/facebookresearch/esm.git
+  Cloning https://github.com/facebookresearch/esm.git to /tmp/762064.alex/pip-req-build-irajz7gg
+  Running command git clone --filter=blob:none --quiet https://github.com/facebookresearch/esm.git /tmp/762064.alex/pip-req-build-irajz7gg
+  fatal: unable to access 'https://github.com/facebookresearch/esm.git/': Failed to connect to github.com port 443 after 131975 ms: Connection timed out
+  error: subprocess-exited-with-error
+  
+  × git clone --filter=blob:none --quiet https://github.com/facebookresearch/esm.git /tmp/762064.alex/pip-req-build-irajz7gg did not run successfully.
+  │ exit code: 128
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× git clone --filter=blob:none --quiet https://github.com/facebookresearch/esm.git /tmp/762064.alex/pip-req-build-irajz7gg did not run successfully.
+│ exit code: 128
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+Requirement already satisfied: fair-esm[esmfold] in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (2.0.0)
+Requirement already satisfied: ml-collections in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (0.1.1)
+Requirement already satisfied: biopython in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (1.81)
+Requirement already satisfied: pytorch-lightning in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (2.0.3)
+Requirement already satisfied: dm-tree in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (0.1.8)
+Requirement already satisfied: omegaconf in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (2.3.0)
+Requirement already satisfied: einops in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (0.6.1)
+Requirement already satisfied: scipy in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (1.10.1)
+Requirement already satisfied: deepspeed==0.5.9 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fair-esm[esmfold]) (0.5.9)
+Requirement already satisfied: packaging in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (23.0)
+Requirement already satisfied: hjson in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (3.1.0)
+Requirement already satisfied: torch in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (2.0.0)
+Requirement already satisfied: tqdm in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (4.65.0)
+Requirement already satisfied: psutil in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (5.9.5)
+Requirement already satisfied: py-cpuinfo in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (9.0.0)
+Requirement already satisfied: numpy in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (1.23.5)
+Requirement already satisfied: ninja in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from deepspeed==0.5.9->fair-esm[esmfold]) (1.11.1)
+Requirement already satisfied: PyYAML in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from ml-collections->fair-esm[esmfold]) (6.0)
+Requirement already satisfied: absl-py in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from ml-collections->fair-esm[esmfold]) (1.4.0)
+Requirement already satisfied: contextlib2 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from ml-collections->fair-esm[esmfold]) (21.6.0)
+Requirement already satisfied: six in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from ml-collections->fair-esm[esmfold]) (1.16.0)
+Requirement already satisfied: antlr4-python3-runtime==4.9.* in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from omegaconf->fair-esm[esmfold]) (4.9.3)
+Requirement already satisfied: torchmetrics>=0.7.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from pytorch-lightning->fair-esm[esmfold]) (0.11.4)
+Requirement already satisfied: fsspec[http]>2021.06.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from pytorch-lightning->fair-esm[esmfold]) (2023.3.0)
+Requirement already satisfied: typing-extensions>=4.0.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from pytorch-lightning->fair-esm[esmfold]) (4.5.0)
+Requirement already satisfied: lightning-utilities>=0.7.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from pytorch-lightning->fair-esm[esmfold]) (0.8.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (3.8.4)
+Requirement already satisfied: requests in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (2.28.2)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.10.3.66)
+Requirement already satisfied: nvidia-cusolver-cu11==11.4.0.1 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.4.0.1)
+Requirement already satisfied: sympy in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (1.11.1)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.7.99)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (8.5.0.96)
+Requirement already satisfied: nvidia-cuda-cupti-cu11==11.7.101 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.7.101)
+Requirement already satisfied: networkx in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (3.0)
+Requirement already satisfied: nvidia-cufft-cu11==10.9.0.58 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (10.9.0.58)
+Requirement already satisfied: nvidia-nccl-cu11==2.14.3 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (2.14.3)
+Requirement already satisfied: triton==2.0.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (2.0.0)
+Requirement already satisfied: jinja2 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (3.1.2)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.7.99)
+Requirement already satisfied: nvidia-cusparse-cu11==11.7.4.91 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.7.4.91)
+Requirement already satisfied: nvidia-curand-cu11==10.2.10.91 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (10.2.10.91)
+Requirement already satisfied: nvidia-nvtx-cu11==11.7.91 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (11.7.91)
+Requirement already satisfied: filelock in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from torch->deepspeed==0.5.9->fair-esm[esmfold]) (3.10.7)
+Requirement already satisfied: setuptools in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch->deepspeed==0.5.9->fair-esm[esmfold]) (56.0.0)
+Requirement already satisfied: wheel in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch->deepspeed==0.5.9->fair-esm[esmfold]) (0.40.0)
+Requirement already satisfied: lit in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from triton==2.0.0->torch->deepspeed==0.5.9->fair-esm[esmfold]) (16.0.0)
+Requirement already satisfied: cmake in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from triton==2.0.0->torch->deepspeed==0.5.9->fair-esm[esmfold]) (3.26.1)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (4.0.2)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (3.1.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (22.2.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (6.0.4)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (1.3.3)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (1.8.2)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (1.3.1)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from jinja2->torch->deepspeed==0.5.9->fair-esm[esmfold]) (2.1.2)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from requests->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from requests->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (2022.12.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from requests->fsspec[http]>2021.06.0->pytorch-lightning->fair-esm[esmfold]) (3.4)
+Requirement already satisfied: mpmath>=0.19 in /home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages (from sympy->torch->deepspeed==0.5.9->fair-esm[esmfold]) (1.3.0)
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+Collecting dllogger@ git+https://github.com/NVIDIA/dllogger.git
+  Cloning https://github.com/NVIDIA/dllogger.git to /tmp/762064.alex/pip-install-2luf_mw_/dllogger_aec36a846b164234928bc024784da717
+  Running command git clone --filter=blob:none --quiet https://github.com/NVIDIA/dllogger.git /tmp/762064.alex/pip-install-2luf_mw_/dllogger_aec36a846b164234928bc024784da717
+  fatal: unable to access 'https://github.com/NVIDIA/dllogger.git/': Failed to connect to github.com port 443 after 132146 ms: Connection timed out
+  error: subprocess-exited-with-error
+  
+  × git clone --filter=blob:none --quiet https://github.com/NVIDIA/dllogger.git /tmp/762064.alex/pip-install-2luf_mw_/dllogger_aec36a846b164234928bc024784da717 did not run successfully.
+  │ exit code: 128
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× git clone --filter=blob:none --quiet https://github.com/NVIDIA/dllogger.git /tmp/762064.alex/pip-install-2luf_mw_/dllogger_aec36a846b164234928bc024784da717 did not run successfully.
+│ exit code: 128
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+Collecting openfold@ git+https://github.com/aqlaboratory/openfold.git@4b41059694619831a7db195b7e0988fc4ff3a307
+  Using cached openfold-1.0.0-cp39-cp39-linux_x86_64.whl
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features_GPU.py", line 38, in <module>
+    batch_labels, batch_strs, batch_tokens = batch_converter(data, batch_size=8)
+TypeError: __call__() got an unexpected keyword argument 'batch_size'
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun 15 16:38:51 CEST 2023
+= Job-ID             : 762064 on alex
+= Job-Name           : ESM_features.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/ESM_RFP_1/ESM_features.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/ESM_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:04:56
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0223
+= Subm/Elig/Start/End: 2023-06-15T16:33:55 / 2023-06-15T16:33:55 / 2023-06-15T16:33:55 / 2023-06-15T16:38:51
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           31.4G    52.4G   104.9G        N/A     105K     500K   1,000K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:E1:00.0, 892832, 0 %, 0 %, 3278 MiB, 12372 ms

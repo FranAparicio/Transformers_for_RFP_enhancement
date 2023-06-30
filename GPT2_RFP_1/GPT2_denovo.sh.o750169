@@ -1,0 +1,63 @@
+### Starting TaskPrologue of job 750169 on a0321 at Tue May 30 15:44:19 CEST 2023
+Running on cores 64-79 with governor ondemand
+Tue May 30 15:44:19 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:81:00.0 Off |                  Off |
+|  0%   30C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+2023-05-30 15:44:26.864797: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/transformers/generation/utils.py:1201: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+Setting `pad_token_id` to `eos_token_id`:0 for open-end generation.
+A decoder-only architecture is being used, but right-padding was detected! For correct generation results, please set `padding_side='left'` when initializing the tokenizer.
+slurmstepd: error: *** JOB 750169 ON a0321 CANCELLED AT 2023-05-30T16:00:42 ***
+=== JOB_STATISTICS ===
+=== current date     : Tue May 30 16:00:44 CEST 2023
+= Job-ID             : 750169 on alex
+= Job-Name           : GPT2_denovo.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/GPT2_RFP_1/GPT2_denovo.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/GPT2_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 1-00:00:00
+= Elapsed runtime    : 00:16:24
+= Total RAM usage    : 12.1 GiB of assigned 58 GiB (20.9%)   
+= Node list          : a0321
+= Subm/Elig/Start/End: 2023-05-30T15:44:17 / 2023-05-30T15:44:17 / 2023-05-30T15:44:18 / 2023-05-30T16:00:42
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           28.8G    52.4G   104.9G        N/A      98K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:81:00.0, 3322861, 0 %, 0 %, 5304 MiB, 970403 ms
