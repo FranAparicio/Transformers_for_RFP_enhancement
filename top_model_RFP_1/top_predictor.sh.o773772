@@ -1,0 +1,79 @@
+### Starting TaskPrologue of job 773772 on a0122 at Thu Jun 29 16:45:17 CEST 2023
+Running on cores 112-127 with governor ondemand
+Thu Jun 29 16:45:17 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     On  | 00000000:E1:00.0 Off |                  Off |
+|  0%   28C    P8              14W / 300W |      4MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Shape before dropping:
+(180, 78)
+Shape after dropping:
+(174, 78)
+[612. 599. 593. 597. 597. 663. 655. 595. 592. 595. 596. 598. 628. 585.
+ 620. 516. 516. 505. 518. 579. 579. 593. 618. 582. 583. 587. 586. 591.
+ 587. 589. 587. 586. 581. 646. 585. 582. 609. 578. 611. 611. 650. 670.
+ 586. 594. 608. 594. 585. 645. 645. 637. 516. 610. 635. 633. 635. 600.
+ 610. 595. 592. 650. 659. 675. 610. 610. 589. 576. 579. 509. 515. 516.
+ 511. 516. 514. 670. 671. 637. 631. 625. 636. 646. 635. 633. 648. 630.
+ 630. 656. 649. 565. 621. 657. 578. 650. 651. 643. 681. 684. 606. 504.
+ 649. 630. 625. 606. 591. 595. 596. 607. 612. 612. 580. 569. 633. 631.
+ 637. 633. 605. 600. 592. 457. 606. 594. 594. 592. 592. 592. 592. 593.
+ 594. 592. 592. 633. 596. 585. 650. 595. 596. 628. 595. 595. 596. 515.
+ 598. 614. 595. 625. 630. 636. 630. 574. 611. 618. 630. 637. 639. 610.
+ 608. 609. 605. 607. 578. 610. 610. 579. 584. 657. 658. 675. 584. 633.
+ 609. 631. 574. 626. 519. 576.]
+Updated shapes:
+Input vectors: (174,)
+Input parameters: (174,)
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/top_model_RFP_1/top_predictor.py", line 99, in <module>
+    outputs = model(batch_vectors)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/atuin/b114cb/b114cb13/top_model_RFP_1/top_predictor.py", line 59, in forward
+    out = self.fc1(x)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x32 and 1280x256)
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun 29 16:45:29 CEST 2023
+= Job-ID             : 773772 on alex
+= Job-Name           : top_predictor.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/top_model_RFP_1/top_predictor.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/top_model_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:13
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0122
+= Subm/Elig/Start/End: 2023-06-29T16:45:16 / 2023-06-29T16:45:16 / 2023-06-29T16:45:16 / 2023-06-29T16:45:29
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc           66.5G    52.4G   104.9G  19542days     105K     500K   1,000K        N/A !!!
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:E1:00.0, 43970, 0 %, 0 %, 328 MiB, 4603 ms

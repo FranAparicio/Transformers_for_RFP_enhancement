@@ -1,0 +1,64 @@
+### Starting TaskPrologue of job 773770 on a0122 at Thu Jun 29 16:42:56 CEST 2023
+Running on cores 112-127 with governor ondemand
+Thu Jun 29 16:42:56 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     On  | 00000000:E1:00.0 Off |                  Off |
+|  0%   28C    P8              14W / 300W |      4MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+Traceback (most recent call last):
+  File "/home/atuin/b114cb/b114cb13/top_model_RFP_1/top_predictor.py", line 12, in <module>
+    data_df = pd.read_csv("/home/atuin/b114cb/b114cb13/ESM_RFP_1/RFPs3max_EMS.csv")
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/home/atuin/b114cb/b114cb13/ESM_RFP_1/RFPs3max_EMS.csv'
+=== JOB_STATISTICS ===
+=== current date     : Thu Jun 29 16:43:11 CEST 2023
+= Job-ID             : 773770 on alex
+= Job-Name           : top_predictor.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/top_model_RFP_1/top_predictor.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/top_model_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:00:16
+= Total RAM usage    : 0.0 GiB of assigned 58 GiB (0.0%)   
+= Node list          : a0122
+= Subm/Elig/Start/End: 2023-06-29T16:42:53 / 2023-06-29T16:42:53 / 2023-06-29T16:42:54 / 2023-06-29T16:43:10
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+!!! /home/hpc           66.5G    52.4G   104.9G  19542days     105K     500K   1,000K        N/A !!!
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]

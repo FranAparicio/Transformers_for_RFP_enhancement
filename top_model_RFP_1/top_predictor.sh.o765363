@@ -1,0 +1,164 @@
+### Starting TaskPrologue of job 765363 on a0324 at Mon Jun 19 14:03:56 CEST 2023
+Running on cores 48-63 with governor ondemand
+Mon Jun 19 14:03:56 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                      On | 00000000:61:00.0 Off |                  Off |
+|  0%   31C    P8               22W / 300W|      0MiB / 49140MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/nn/modules/loss.py:536: UserWarning: Using a target size (torch.Size([32])) that is different to the input size (torch.Size([32, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/nn/modules/loss.py:536: UserWarning: Using a target size (torch.Size([14])) that is different to the input size (torch.Size([14, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/hpc/b114cb/b114cb13/.env/lib/python3.9/site-packages/torch/nn/modules/loss.py:536: UserWarning: Using a target size (torch.Size([4])) that is different to the input size (torch.Size([4, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/home/atuin/b114cb/b114cb13/BERT_RFP_1/top_predictor.py:144: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+Shape before dropping:
+(181, 45)
+Shape after dropping:
+(178, 45)
+[612. 599. 593. 597. 597. 663. 655. 595. 592. 595. 596. 598. 628. 585.
+ 620. 581. 581. 575. 578. 579. 579. 593. 618. 582. 583. 587. 586. 591.
+ 587. 589. 587. 586. 581. 646. 585. 582. 609. 578. 611. 611. 650. 670.
+ 586. 594. 608. 594. 585. 645. 645. 637. 580. 610. 635. 633. 635. 600.
+ 610. 595. 592. 650. 659. 675. 610. 610. 589. 576. 579. 580. 580. 580.
+ 579. 581. 581. 670. 671. 637. 631. 625. 636. 646. 635. 633. 648. 630.
+ 630. 656. 649. 565. 621. 657. 578. 650. 651. 643. 681. 684. 606. 571.
+ 649. 630. 625. 606. 591. 595. 596. 607. 612. 612. 580. 569. 633. 631.
+ 637. 633. 605. 600. 592. 624. 606. 594. 594. 592. 592. 592. 592. 593.
+ 594. 592. 592. 633. 596. 585. 650. 595. 596. 596. 628. 595. 595. 596.
+ 581. 579. 598. 614. 595. 625. 630. 636. 630. 574. 611. 618. 630. 637.
+ 639. 610. 608. 609. 605. 607. 607. 585. 578. 610. 610. 579. 584. 657.
+ 658. 675. 584. 633. 609. 631. 574. 626. 589. 576.]
+Updated shapes:
+Input vectors: (178, 1024)
+Input parameters: (178,)
+Epoch 1/50, Loss: 365901.03125, Eval Loss: 363748.203125
+Epoch 2/50, Loss: 363394.21875, Eval Loss: 361255.703125
+Epoch 3/50, Loss: 360267.53125, Eval Loss: 358147.640625
+Epoch 4/50, Loss: 356451.6875, Eval Loss: 354355.1875
+Epoch 5/50, Loss: 351879.4375, Eval Loss: 349809.265625
+Epoch 6/50, Loss: 346491.25, Eval Loss: 344453.25
+Epoch 7/50, Loss: 340233.09375, Eval Loss: 338232.078125
+Epoch 8/50, Loss: 333080.6875, Eval Loss: 331122.3125
+Epoch 9/50, Loss: 325017.40625, Eval Loss: 323107.703125
+Epoch 10/50, Loss: 316035.65625, Eval Loss: 314178.484375
+Epoch 11/50, Loss: 306152.90625, Eval Loss: 304353.265625
+Epoch 12/50, Loss: 295414.28125, Eval Loss: 293676.328125
+Epoch 13/50, Loss: 283866.375, Eval Loss: 282195.9375
+Epoch 14/50, Loss: 271562.625, Eval Loss: 269963.1875
+Epoch 15/50, Loss: 258589.96875, Eval Loss: 257065.09375
+Epoch 16/50, Loss: 245038.453125, Eval Loss: 243595.796875
+Epoch 17/50, Loss: 231006.359375, Eval Loss: 229644.78125
+Epoch 18/50, Loss: 216610.78125, Eval Loss: 215334.578125
+Epoch 19/50, Loss: 201947.15625, Eval Loss: 200762.734375
+Epoch 20/50, Loss: 187126.765625, Eval Loss: 186032.3125
+Epoch 21/50, Loss: 172301.265625, Eval Loss: 171296.4375
+Epoch 22/50, Loss: 157586.625, Eval Loss: 156677.7109375
+Epoch 23/50, Loss: 143099.09375, Eval Loss: 142277.921875
+Epoch 24/50, Loss: 128970.1796875, Eval Loss: 128234.12109375
+Epoch 25/50, Loss: 115325.78125, Eval Loss: 114673.890625
+Epoch 26/50, Loss: 102276.9296875, Eval Loss: 101704.71875
+Epoch 27/50, Loss: 89910.40625, Eval Loss: 89418.765625
+Epoch 28/50, Loss: 78311.484375, Eval Loss: 77894.28125
+Epoch 29/50, Loss: 67545.0, Eval Loss: 67195.15234375
+Epoch 30/50, Loss: 57642.1796875, Eval Loss: 57353.685546875
+Epoch 31/50, Loss: 48655.828125, Eval Loss: 48423.943359375
+Epoch 32/50, Loss: 40611.828125, Eval Loss: 40431.958984375
+Epoch 33/50, Loss: 33493.19140625, Eval Loss: 33359.65625
+Epoch 34/50, Loss: 27282.392578125, Eval Loss: 27192.7197265625
+Epoch 35/50, Loss: 21931.294921875, Eval Loss: 21879.2451171875
+Epoch 36/50, Loss: 17418.3828125, Eval Loss: 17398.2060546875
+Epoch 37/50, Loss: 13666.9658203125, Eval Loss: 13674.03515625
+Epoch 38/50, Loss: 10583.12109375, Eval Loss: 10612.50927734375
+Epoch 39/50, Loss: 8106.5263671875, Eval Loss: 8153.90771484375
+Epoch 40/50, Loss: 6157.93017578125, Eval Loss: 6219.582275390625
+Epoch 41/50, Loss: 4660.263671875, Eval Loss: 4733.130126953125
+Epoch 42/50, Loss: 3528.520263671875, Eval Loss: 3610.5479736328125
+Epoch 43/50, Loss: 2695.610595703125, Eval Loss: 2784.510498046875
+Epoch 44/50, Loss: 2105.6708984375, Eval Loss: 2199.80029296875
+Epoch 45/50, Loss: 1694.599609375, Eval Loss: 1792.5032958984375
+Epoch 46/50, Loss: 1421.779296875, Eval Loss: 1522.456787109375
+Epoch 47/50, Loss: 1244.8743896484375, Eval Loss: 1347.4228515625
+Epoch 48/50, Loss: 1139.214599609375, Eval Loss: 1243.0908813476562
+Epoch 49/50, Loss: 1082.1162109375, Eval Loss: 1186.84033203125
+Epoch 50/50, Loss: 1057.9931640625, Eval Loss: 1163.191650390625
+Predictions on Evaluation Set:
+Predicted: 604.3662109375, Real: 579.0
+Predicted: 604.4436645507812, Real: 594.0
+Predicted: 606.9380493164062, Real: 581.0
+Predicted: 596.1693725585938, Real: 587.0
+Predicted: 568.1264038085938, Real: 580.0
+Predicted: 562.1088256835938, Real: 581.0
+Predicted: 588.2861938476562, Real: 594.0
+Predicted: 614.1940307617188, Real: 574.0
+Predicted: 603.1802368164062, Real: 569.0
+Predicted: 590.1185302734375, Real: 579.0
+Predicted: 600.6127319335938, Real: 583.0
+Predicted: 543.3257446289062, Real: 611.0
+Predicted: 626.42919921875, Real: 670.0
+Predicted: 625.7379150390625, Real: 606.0
+Predicted: 577.5945434570312, Real: 581.0
+Predicted: 612.9989624023438, Real: 631.0
+Predicted: 611.0652465820312, Real: 633.0
+Predicted: 601.4711303710938, Real: 648.0
+Predicted: 586.6552124023438, Real: 595.0
+Predicted: 576.5928344726562, Real: 605.0
+Predicted: 597.09423828125, Real: 578.0
+Predicted: 580.7921752929688, Real: 579.0
+Predicted: 630.0357055664062, Real: 659.0
+Predicted: 606.4912719726562, Real: 675.0
+Predicted: 628.14501953125, Real: 633.0
+Predicted: 589.4705200195312, Real: 610.0
+Predicted: 626.0032348632812, Real: 624.0
+Predicted: 615.2471313476562, Real: 576.0
+Predicted: 622.1039428710938, Real: 578.0
+Predicted: 623.6323852539062, Real: 600.0
+Predicted: 584.4114990234375, Real: 589.0
+Predicted: 594.5904541015625, Real: 592.0
+Predicted: 563.0769653320312, Real: 625.0
+Predicted: 625.8119506835938, Real: 586.0
+Predicted: 601.675048828125, Real: 628.0
+Predicted: 624.1304931640625, Real: 586.0
+R^2 score: -0.18934740736038358
+MSE: 943.6397960995221
+=== JOB_STATISTICS ===
+=== current date     : Mon Jun 19 14:07:57 CEST 2023
+= Job-ID             : 765363 on alex
+= Job-Name           : top_predictor.sh
+= Job-Command        : /home/atuin/b114cb/b114cb13/BERT_RFP_1/top_predictor.sh
+= Initial workdir    : /home/atuin/b114cb/b114cb13/BERT_RFP_1
+= Queue/Partition    : a40
+= Slurm account      : b114cb with QOS=normal
+= Requested resources: cpu=16,mem=60000M,node=1,billing=16,gres/gpu=1,gres/gpu:a40=1 for 10:00:00
+= Elapsed runtime    : 00:04:02
+= Total RAM usage    : 3.2 GiB of assigned 58 GiB (5.5%)   
+= Node list          : a0324
+= Subm/Elig/Start/End: 2023-06-19T14:03:54 / 2023-06-19T14:03:54 / 2023-06-19T14:03:55 / 2023-06-19T14:07:57
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/hpc           31.4G    52.4G   104.9G        N/A     105K     500K   1,000K        N/A    
+    /home/vault          5.9G   524.3G  1048.6G        N/A      10      200K     400K        N/A    
+    /lustre              4.0K     0.0K     0.0K        N/A       1   20,000      250K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:61:00.0, 517278, 1 %, 0 %, 1056 MiB, 8010 ms
